@@ -2,7 +2,8 @@
 sudo: required
 language: java
 before_install:
-- ant deps
+- find -name "build.xml"
+- sudo apt-get install ant
 - export PATH=$PATH:/home/travis/PredictionIO/bin
 - curl -s https://install.prediction.io/install.sh >install.sh
 - bash -x install.sh -y

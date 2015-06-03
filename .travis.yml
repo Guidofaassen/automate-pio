@@ -4,7 +4,7 @@ language: java
 before_install:
 - export PATH=$PATH:/home/travis/PredictionIO/bin
 - curl -s https://install.prediction.io/install.sh >install.sh
-- bash "install.sh -y"
+- bash install.sh -y
 - pio-start-all
 - pio template get PredictionIO/template-scala-parallel-complementarypurchase MyComplementaryPurchase --name fakeName --package testPackage --email None
 - cd MyComplementaryPurchase

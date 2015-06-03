@@ -5,5 +5,4 @@ before_install:
 - curl -s https://install.prediction.io/install.sh >install.sh
 - bash -x install.sh -y
 - ls -la /home/travis/PredictionIO
-- tree /home/travis/
 - /home/travis/PredictionIO/bin/pio-start-all

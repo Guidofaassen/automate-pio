@@ -7,5 +7,6 @@ before_install:
 - bash -x install.sh -y
 - ls -la /home/travis/PredictionIO
 - echo $PATH
-- find . -name "build.xml"
 - pio-start-all
+script:
+- echo "done"

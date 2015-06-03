@@ -3,5 +3,5 @@ sudo: required
 language: scala
 before_install:
 - curl -s https://install.prediction.io/install.sh >install.sh
-- ./install.sh -y
+- bash -x install.sh -y
 - ./PredictionIO/bin/pio help

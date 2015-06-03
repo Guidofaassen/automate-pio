@@ -8,5 +8,7 @@ before_install:
 - ls -la /home/travis/PredictionIO
 - echo $PATH
 - pio-start-all
+- pio template get PredictionIO/template-scala-parallel-complementarypurchase MyComplementaryPurchase
+- cd MyComplementaryPurchase
 script:
 - echo "done"

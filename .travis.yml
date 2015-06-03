@@ -2,7 +2,9 @@
 sudo: required
 language: scala
 before_install:
+- export PATH=$PATH:/home/travis/PredictionIO/bin
 - curl -s https://install.prediction.io/install.sh >install.sh
 - bash -x install.sh -y
 - ls -la /home/travis/PredictionIO
-- /home/travis/PredictionIO/bin/pio-start-all
+- echo $PATH
+- pio-start-all

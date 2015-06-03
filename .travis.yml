@@ -1,6 +1,6 @@
 ---
 sudo: required
-language: scala
+language: java
 before_install:
 - export PATH=$PATH:/home/travis/PredictionIO/bin
 - curl -s https://install.prediction.io/install.sh >install.sh

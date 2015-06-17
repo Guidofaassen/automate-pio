@@ -12,6 +12,6 @@ before_install:
 - pio build
 - pio train
 - pio deploy
-- curl -H "Content-Type: application/json" -d '{  "items" : ["s2i1"],  "num" : 3}' http://localhost:8000/queries.json
+- curl -H "Content-Type: application/json" -d '{  "items" : \["s2i1"\],  "num" : 3}' http://localhost:8000/queries.json
 script:
 - echo "done"

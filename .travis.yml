@@ -6,7 +6,7 @@ before_install:
 - curl -s https://install.prediction.io/install.sh >install.sh
 - bash install.sh -y
 - pio-start-all
-- yes pio template get PredictionIO/template-scala-parallel-complementarypurchase MyComplementaryPurchase --name fakeName --package testPackage --email None yes -n
+- pio template get PredictionIO/template-scala-parallel-complementarypurchase MyComplementaryPurchase --name fakeName --package testPackage --email None yes -n
 - cd MyComplementaryPurchase
 script:
 - echo "done"

@@ -8,5 +8,10 @@ before_install:
 - pio-start-all
 - pio template get PredictionIO/template-scala-parallel-complementarypurchase MyComplementaryPurchase --name fakeName --package testPackage --email None < answers.txt
 - cd MyComplementaryPurchase
+- pio app new INVALID_APP_NAME
+- pio build
+- pio train
+- pio deploy
+- curl -H "Content-Type: application/json" -d '{  "items" : ["s2i1"],  "num" : 3}' http://localhost:8000/queries.json
 script:
 - echo "done"

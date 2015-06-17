@@ -9,8 +9,10 @@ before_install:
 - pio template get PredictionIO/template-scala-parallel-complementarypurchase MyComplementaryPurchase --name fakeName --package testPackage --email None < answers.txt
 - cd MyComplementaryPurchase
 - pio app new INVALID_APP_NAME
+- pio app list
 - pio build
 - pio train
 - pio deploy
+- pio app list
 script:
 - echo "done"

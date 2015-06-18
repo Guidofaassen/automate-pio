@@ -2,7 +2,6 @@
 sudo: required
 language: java
 before_install:
-- apt-get -y install curl
 - export PATH=$PATH:/home/travis/PredictionIO/bin
 - curl -s https://install.prediction.io/install.sh >install.sh
 - bash install.sh -y
@@ -16,4 +15,4 @@ before_install:
 - pio deploy &
 - pio app list
 script:
-- curl -H 'Content-Type:application/json'  -d '{ "items":[ "s2i1" ], "num" :3}' http://localhost:8000/queries.json
+- curl -H "Content-Type:application/json"  -d "{ 'items':[ 's2i1' ], 'num' :3}" http://localhost:8000/queries.json

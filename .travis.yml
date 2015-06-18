@@ -13,6 +13,6 @@ before_install:
 - pio build
 - pio train
 - pio deploy &
-- pio app list
+- sleep 120 # let's wait for 2 minutes (dirty hack!)
 script:
 - curl -v -H "Content-Type:application/json"  -d "{ 'items':[ 's2i1' ], 'num' :3}" http://localhost:8000/queries.json

@@ -12,7 +12,7 @@ before_install:
 - pio app list
 - pio build
 - pio train
-- pio deploy
+- pio deploy &
 - pio app list
 script:
 - echo "done"

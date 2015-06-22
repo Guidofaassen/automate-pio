@@ -11,7 +11,8 @@ before_install:
 - pio app new INVALID_APP_NAME
 - pio app list
 - pip install predictionio
-- python data/import_eventserver.py --access_key 3mZWDzci2D5YsqAnqNnXH9SB6Rg3dsTBs8iHkK6X2i54IQsIZI1eEeQQyMfs7b3F- pio build
+- python data/import_eventserver.py --access_key 3mZWDzci2D5YsqAnqNnXH9SB6Rg3dsTBs8iHkK6X2i54IQsIZI1eEeQQyMfs7b3F
+- pio build
 - pio train
 - pio deploy &
 - sleep 120 # let's wait for 2 minutes (dirty hack!)

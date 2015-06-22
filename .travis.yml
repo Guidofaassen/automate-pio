@@ -8,10 +8,10 @@ before_install:
 - pio-start-all
 - pio template get PredictionIO/template-scala-parallel-complementarypurchase MyComplementaryPurchase --name fakeName --package testPackage --email None < answers.txt
 - cd MyComplementaryPurchase
-- pio app new INVALID_APP_NAME
+- pio app new INVALID_APP_NAME --access-key fakeKeyABC
 - pio app list
 - pip install predictionio
-- python data/import_eventserver.py --access_key 3mZWDzci2D5YsqAnqNnXH9SB6Rg3dsTBs8iHkK6X2i54IQsIZI1eEeQQyMfs7b3F
+- python data/import_eventserver.py --access_key fakeKeyABC
 - pio build
 - pio train
 - pio deploy &
